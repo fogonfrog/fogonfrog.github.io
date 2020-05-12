@@ -42,10 +42,10 @@ h5, h6 {
 
 h1 {
 	font-size: 3rem;
-	font-weight: 100;
+	font-weight: 500;
 }
 h2 {
-	font-size: 2.4rem;
+	font-size: 2rem;
 
 }
 h3 {
@@ -114,9 +114,10 @@ li {
 /* /MAIN STYLES */
 
 /* МОЯ НЕДОРАЗМЕТКА */
+
 .container {
 	display: flex;
-	width: 1180px;
+	width: 1378px;
 	margin: 0 auto;
 }
 
@@ -132,7 +133,7 @@ li {
 }
 
 #container-hello {
-	justify-content: center;
+	justify-content: space-between;
 	flex-direction: row;
 }
 
@@ -163,9 +164,9 @@ li {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 90px;
+	border-radius: 6px;
 	padding: 14px 22px;
-	min-width: 125px;
+	min-width: 80px;
 	outline: none;
 }
 .but:hover {
@@ -176,6 +177,7 @@ li {
 .but:active {
 	color: #ffffff;
 	fill: #ffffff;
+	transform: translateY(3px);
 	text-decoration: none;
 }
 .but:visited {
@@ -198,6 +200,17 @@ li {
 	text-decoration: none;
 	background: #b122ff;
 }
+
+.but_red {
+	background-color: #EB4343;
+	color: #fff;
+	fill: #fff;
+}
+.but_red:hover {
+	text-decoration: none;
+	background: #D63A3A;
+}
+
 
 .but_blue {
 	background-color: #33aae0;
@@ -244,7 +257,9 @@ li {
 	display: flex;
 	width: 100%;
 	height: 69px;
-	background-color: #161718;
+	background-color: #111213;
+	position: fixed;
+	z-index: 10;
 }
 
 .logo {
@@ -293,27 +308,25 @@ li {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	min-height: 610px;
 }
-.section-draw {
-	display: inline-block;
-	width: 370px;
-}
-#draw-men {
-	background: url(../img/icons/imghi.svg);
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: 100% 100%;
-	order: 1;
-	width: 634px;
-	height: 220px;
-}
+
 #draw-orbits {
 	background: url(../img/orbits.png);
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: 100% 100%;
+	background-position: bottom center;
+	background-size: 100%;
+	position: relative;
+	display: flex;
 	order: 0;
+}
+#draw-orbits img {
+	position: absolute;
+    width: 433px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -30px;
+    border-bottom-right-radius: 100px;
 }
 #draw-incontact {
 	background: url(../img/undraw3.svg);
@@ -322,11 +335,64 @@ li {
 	order: 1;
 }
 
-.section-article {
+.section-about {
+	background: url(../img/icons/dotted.png);
+	background-repeat: no-repeat;
+	background-position: 78% 0%;
+	height: 80vh;
+}
+.section-about__article {
 	display: flex;
 	flex-direction: column;
-	width: 56%;
+	width: 40%;
+	padding-bottom: 60px;
 }
+.section-about__article h1 {
+	padding: 0 0 3rem 0;
+}
+
+.section-about__article p {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.section-about__article ul {
+	font-size: 1.5rem;
+	padding: 0;
+	margin: 0;
+}
+.section-about__article ul li {
+	line-height: 42px;
+	height: 48px;
+	list-style: none;
+	margin: 0 0 3rem 0;
+	padding: 0 0 0 64px;
+}
+
+.section-about__article ul li.section-about__article__li-landing {
+	background: url(../img/icons/skills/landing.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.section-about__article ul li.section-about__article__li-logo {
+	background: url(../img/icons/skills/logo.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.section-about__article ul li.section-about__article__li-html {
+	background: url(../img/icons/skills/code.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.section-about__article ul li.section-about__article__li-mobile {
+	background: url(../img/icons/skills/mobile.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
 .section-article__desc {
 	line-height: 24px;
 	padding: 20px 0;
@@ -351,9 +417,39 @@ li {
 	padding: 0 0 60px 0;
 }
 #dark-sctn {
-	background-color: #161718;
+	background-color: #111213;
 	color: #eee;
 }
+.section-hello {
+	height: 92vh;
+	background: url(../img/icons/dotted.png);
+	background-repeat: no-repeat;
+	background-position: 10% 20%;
+}
+.section-hello__text {
+	width: 44%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.section-hello__text h1 {
+	font-size: 4.5rem;
+	font-weight: 500;
+	padding: 0 0 3rem 0;
+}
+.section-hello__draw {
+	display: inline-block;
+	width: 50%;
+}
+#section-hello__draw-men {
+	background: url(../img/icons/imghi.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	order: 1;
+    height: 490px;
+}
+
 
 .section-content {
 	display: flex;
