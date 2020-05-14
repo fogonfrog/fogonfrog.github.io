@@ -117,7 +117,8 @@ li {
 
 .container {
 	display: flex;
-	width: 1378px;
+	width: 100%;
+	max-width: 75rem;
 	margin: 0 auto;
 }
 
@@ -256,7 +257,7 @@ li {
 .toolbar {
 	display: flex;
 	width: 100%;
-	height: 69px;
+	height: 5rem;
 	background-color: #111213;
 	position: fixed;
 	z-index: 10;
@@ -283,6 +284,9 @@ li {
 	line-height: 69px;
 	position: relative;
 	color: #B1B1B1;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 0.8rem;
 }
 .menu a:hover {
 	color: #eee;
@@ -339,7 +343,7 @@ li {
 	background: url(../img/icons/dotted.png);
 	background-repeat: no-repeat;
 	background-position: 78% 0%;
-	height: 80vh;
+	min-height: 80vh;
 }
 .section-about__article {
 	display: flex;
@@ -421,26 +425,34 @@ li {
 	color: #eee;
 }
 .section-hello {
-	height: 92vh;
+	/* min-height: 92vh; */
 	background: url(../img/icons/dotted.png);
 	background-repeat: no-repeat;
 	background-position: 10% 20%;
+	padding: 12rem 0;
 }
 .section-hello__text {
-	width: 44%;
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
 }
 .section-hello__text h1 {
-	font-size: 4.5rem;
-	font-weight: 500;
+	font-size: 4rem;
+	font-weight: 600;
 	padding: 0 0 3rem 0;
 }
 .section-hello__draw {
-	display: inline-block;
-	width: 50%;
+	display: flex;
+	width: 45%;
+	justify-content: flex-end;
+	align-items: center;
+	/* align-content: flex-end; */
+}
+.section-hello__draw img {
+	max-width: 90%;
+	/* float: right; */
 }
 #section-hello__draw-men {
 	background: url(../img/icons/imghi.svg);
