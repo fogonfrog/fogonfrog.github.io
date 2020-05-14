@@ -568,14 +568,14 @@ li {
 }
 
 .section-block__title span {
-	background: #33aae0;
-	color: #fff;
+	border: 1px solid #727272;
+	color: #727272;
 	display: inline-block;
 	font-weight: 600;
 	font-size: 0.8rem;
 	margin-right: 5px;
 	margin-top: 8px;
-	padding: 5px;
+	padding: 5px 8px;
 	border-radius: 5px;
 }
 .section-block__title p {
