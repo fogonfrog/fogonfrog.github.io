@@ -96,6 +96,12 @@ li {
 	-o-box-shadow: 0 6px 25px rgba(153, 27, 222, 0.5);
 	box-shadow: 0 6px 25px rgba(153, 27, 222, 0.5);
 }
+.glow_green {
+	-moz-box-shadow: 0 6px 25px rgba(58, 175, 29, 0.5);
+	-webkit-box-shadow: 0 6px 25px rgba(58, 175, 29, 0.5);
+	-o-box-shadow: 0 6px 25px rgba(58, 175, 29, 0.5);
+	box-shadow: 0 6px 25px rgba(58, 175, 29, 0.5);
+}
 
 
 
@@ -201,6 +207,16 @@ li {
 	background: #b122ff;
 }
 
+.but_green {
+	background-color: #3AAF1D;
+	color: #faf0ff;
+	fill: #faf0ff;
+}
+.but_green:hover {
+	text-decoration: none;
+	background: #44C325;
+}
+
 .but_red {
 	background-color: #EB4343;
 	color: #fff;
@@ -230,6 +246,8 @@ li {
 	background-color: #ffffff;
 	box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
+
+
 
 .but_first {
 	margin: 0 15px 0 0;
@@ -663,6 +681,12 @@ li {
 	font-family: "Montserrat-Bold";
 }
 
+.modal-close {
+	position: absolute;
+	background-color: #ffffff;
+	top: -20px;
+}
+
 .modal-header span {
 	cursor: default;
 	background: #33aae0;
@@ -679,7 +703,7 @@ li {
 
 .footer {
 	min-height: 600px;
-	background-image: url(../img/undraw_footer.png);
+	background-image: url(../img/undraw_footer.svg);
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	justify-content: flex-start;
