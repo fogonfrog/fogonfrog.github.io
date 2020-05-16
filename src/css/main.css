@@ -113,7 +113,7 @@ li {
 }
 /* /MAIN STYLES */
 
-/* МОЯ НЕДОРАЗМЕТКА */
+/* ÐœÐžÐ¯ ÐÐ•Ð”ÐžÐ ÐÐ—ÐœÐ•Ð¢ÐšÐ */
 
 .container {
 	display: flex;
@@ -153,11 +153,11 @@ li {
 }
 
 .col-footer {
-	flex-direction: row;
-	justify-content: space-between;
+	/* flex-direction: row; */
+	/* justify-content: space-between; */
 }
 
-/* /МОЯ НЕДОРАЗМЕТКА */
+/* /ÐœÐžÐ¯ ÐÐ•Ð”ÐžÐ ÐÐ—ÐœÐ•Ð¢ÐšÐ */
 
 /* BUTTON STYLES */
 .but {
@@ -267,6 +267,7 @@ li {
 	outline: none;
 }
 
+
 .menu {
 	display: flex;
 	flex-direction: row;
@@ -289,6 +290,15 @@ li {
 }
 .menu a:hover {
 	color: #eee;
+}
+.menu img {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.menu a:hover img {
+	transform: translateY(-2px);
 }
 .menu a:last-child {
 	margin: 0;
@@ -414,7 +424,7 @@ li {
 
 .section-header {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	flex-direction: column;
 	margin: 3rem 0 3rem 0;
 }
@@ -668,9 +678,11 @@ li {
 
 
 .footer {
-	min-height:300px;
-	background-color: #2A3338;
-	background-image: url(../img/pattern.png);
+	min-height: 600px;
+	background-image: url(../img/undraw_footer.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	justify-content: flex-start;
 }
 
 .touch-menu {
